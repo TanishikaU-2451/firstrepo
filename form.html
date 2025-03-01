@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 40%; border-collapse: collapse; background-color: pink; margin: 20px auto; padding: 20px; border: 2px solid black;">
+        <tr>
+            <td colspan="2" style="text-align: center; font-size: 24px; padding: 10px; color: black; border-bottom: 2px solid black;">Student Registration Form</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; color: black; border-bottom: 1px solid black;">Full Name:</td>
+            <td style="padding: 10px; border-bottom: 1px solid black;">
+                <input type="text" id="name" name="name" required style="width: 80%; padding: 5px; border: 1px solid black;">
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; color: black; border-bottom: 1px solid black;">Contact Number:</td>
+            <td style="padding: 10px; border-bottom: 1px solid black;">
+                <input type="tel" id="contact" name="contact" required style="width: 80%; padding: 5px; border: 1px solid black;">
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; color: black; border-bottom: 1px solid black;">Gender:</td>
+            <td style="padding: 10px; border-bottom: 1px solid black;">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male" style="color: black;">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female" style="color: black;">Female</label>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; color: black; border-bottom: 1px solid black;">Address:</td>
+            <td style="padding: 10px; border-bottom: 1px solid black;">
+                <textarea id="address" name="address" rows="4" required style="width: 80%; padding: 5px; border: 1px solid black;"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; color: black; border-bottom: 1px solid black;">Hobbies:</td>
+            <td style="padding: 10px; border-bottom: 1px solid black;">
+                <input type="checkbox" id="reading" name="hobbies" value="reading">
+                <label for="reading" style="color: black;">Reading</label>
+                <input type="checkbox" id="travelling" name="hobbies" value="travelling">
+                <label for="travelling" style="color: black;">Travelling</label>
+                <input type="checkbox" id="singing" name="hobbies" value="singing">
+                <label for="singing" style="color: black;">Singing</label>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; color: black; border-bottom: 1px solid black;">Skillset:</td>
+            <td style="padding: 10px; border-bottom: 1px solid black;">
+                <input type="checkbox" id="c" name="skillset" value="c">
+                <label for="c" style="color: black;">C</label>
+                <input type="checkbox" id="python" name="skillset" value="python">
+                <label for="python" style="color: black;">Python</label>
+                <input type="checkbox" id="java" name="skillset" value="java">
+                <label for="java" style="color: black;">JAVA</label>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; color: black; border-bottom: 1px solid black;">Maximum Qualification:</td>
+            <td style="padding: 10px; border-bottom: 1px solid black;">
+                <select id="qualification" name="qualification" required style="width: 80%; padding: 5px; border: 1px solid black;">
+                    <option value="" disabled selected>Select your maximum qualification</option>
+                    <option value="ssc">SSC</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="M.Tech">M.Tech</option>
+                    <option value="phd">PhD</option>
+                    <option value="intermediate">Intermediate</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; color: black; border-bottom: 1px solid black;">District:</td>
+            <td style="padding: 10px; border-bottom: 1px solid black;">
+                <select id="district" name="district" required style="width: 80%; padding: 5px; border: 1px solid black;">
+                    <option value="" disabled selected>Select your district</option>
+                    <option value="hyd">Hyderabad</option>
+                    <option value="rr">Ranga Reddy</option>
+                    <option value="nizambad">Nizambad</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center; padding: 10px;">
+                <button type="submit" style="padding: 10px 20px; background-color: black; color: white; border: none; cursor: pointer;">Submit</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
